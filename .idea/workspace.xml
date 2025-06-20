@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="521921a3-a168-45db-a585-e3304a6c32f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/CozyDeskLogo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/CozyDeskLogo2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/IMG_8692.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/IMG_8692.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/logo.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CozyDesktop/logo.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/CozyDeskLogo2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/CozyDeskLogo2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/OVROverlayCanvasSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/OVROverlayCanvasSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Standard.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Standard.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_BlackMask.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_BlackMask.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_Displacement.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_Displacement.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_Transparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Materials/uDD_Screen_Unlit_Transparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Materials/NotAvailable.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Materials/NotAvailable.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Textures/NotAvailable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/Resources/uDesktopDuplication/Textures/NotAvailable.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/uDD_Board.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/uDD_Board.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/uDD_Plane.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Models/uDD_Plane.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Board.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Board.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Plane for Displacement Mapping.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Plane for Displacement Mapping.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Unity Plane.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Assets/Prefabs/Monitor Unity Plane.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DesktopStreamerXR.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DesktopStreamerXR.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Resources/Images.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Resources/Images/uDD_Cursor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Resources/Images/uDD_Cursor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/TextureEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/TextureEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Utils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Utils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/uDesktopDuplication.Editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/uDesktopDuplication.Editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86/uDesktopDuplication.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86/uDesktopDuplication.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86_64.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86_64/uDesktopDuplication.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Plugins/x86_64/uDesktopDuplication.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Primary Monitor.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Primary Monitor.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Lib.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Lib.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Manager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Manager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Monitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Monitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Texture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Texture.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Utility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Scripts/Utility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Common.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Common.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Params.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Params.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Standard.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Standard.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_BlackMask.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_BlackMask.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_Displacement.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_Displacement.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_Transparent.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/Shaders/uDD_Unlit_Transparent.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/uDesktopDuplication.Runtime.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Runtime/uDesktopDuplication.Runtime.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Multiple Monitors Roundly.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Multiple Monitors Roundly.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Multiple Monitors.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Multiple Monitors.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorCreator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorCreator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorLayouter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorLayouter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorRoundLayouter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/MultipleMonitorRoundLayouter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary Monitor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary Monitor/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary Monitor/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary Monitor/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary Monitor/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary MonitorSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Primary MonitorSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Shaders.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Shaders.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Switch Scenes.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Switch Scenes.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Toggle Monitors.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/Toggle Monitors.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/ToggleMonitors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/ToggleMonitors.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/UddSceneManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/01. Basic/UddSceneManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/02. Loupe.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/02. Loupe/Loupe.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/02. Loupe/Loupe.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/02. Loupe/Loupe.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/02. Loupe/Loupe.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/03. Raycast.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/03. Raycast/Raycast.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/03. Raycast/Raycast.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/03. Raycast/RaycastExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/03. Raycast/RaycastExample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/04. GetPixels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/04. GetPixels/GetPixels.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/04. GetPixels/GetPixels.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/04. GetPixels/GetPixelsExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/04. GetPixels/GetPixelsExample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/05. Buffer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/05. Buffer/Buffer.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/05. Buffer/Buffer.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/05. Buffer/BufferExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/05. Buffer/BufferExample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/GazePointAnalyzer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/GazePointAnalyzer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/Meta Data.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/Meta Data.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/Multiple Monitor Analyzer.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/Multiple Monitor Analyzer.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/MultipleMonitorAnalyzer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/06. Meta/MultipleMonitorAnalyzer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/07. Displacement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/07. Displacement/Displacement.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/07. Displacement/Displacement.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/07. Displacement/DisplacementMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Samples/07. Displacement/DisplacementMapping.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/desktop duplication 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/desktop duplication 1/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/desktop duplication 1/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/desktop duplication 1/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/desktop duplication 1/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/package.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Loaders/OpenXRLoader.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Loaders/OpenXRLoader.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Loaders/SimulationLoader.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Loaders/SimulationLoader.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Resources/XRSimulationRuntimeSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Resources/XRSimulationRuntimeSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Editor Settings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Editor Settings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXRPackageSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXRPackageSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/XRSimulationSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/Settings/XRSimulationSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/Resources/XRSimulationPreferences.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XR/UserSimulationSettings/SimulationEnvironmentAssetsManager.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/B_M_0005_009_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/B_M_0005_009_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/E_M_0004_mat (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/E_M_0004_mat (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/F_F_0007_000_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/F_F_0007_000_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/H_F_0000_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/H_F_0000_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/H_F_0033_mat (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/H_F_0033_mat (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/M_M_0004_001_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/M_M_0004_001_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/S_F_0001_007_mat (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/S_F_0001_007_mat (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/T_F_0000_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/T_F_0000_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/T_M_0012_000_mat (Instance) (Instance) (Instance).asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Materials/T_M_0012_000_mat (Instance) (Instance) (Instance).asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Meshes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Meshes/Body.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).Meshes/Body.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/hearthero (VRChat).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/B_M_0005_001_nol.normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/B_M_0005_001_nol.normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/B_M_0005_009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/B_M_0005_009.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/F_F_0007_OutlineMask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/F_F_0007_OutlineMask.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/H_F_0033_000_nol.normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/H_F_0033_000_nol.normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/S_F_0001_001_nol.normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/S_F_0001_001_nol.normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/S_F_0001_007_col.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/S_F_0001_007_col.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/T_M_0012_000_col.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/T_M_0012_000_col.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/T_M_0012_001_nol.normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/T_M_0012_001_nol.normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_10.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_13.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/simdiffhair.Materials/heartherovrm.Textures/texture_9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uDesktopDuplication.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetaXR/MetaXRProjectSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MetaXR/MetaXRProjectSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ImmersiveDebuggerSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ImmersiveDebuggerSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/InputActions.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/InputActions.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MetaXRAcousticMaterialMapping.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MetaXRAcousticMaterialMapping.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MetaXRAcousticSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MetaXRAcousticSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MetaXRAudioSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MetaXRAudioSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OVRPlatformToolSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OVRPlatformToolSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CozyDesktop.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2ymfgqXXbO78iktrM4n8easuoun" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging Merged__DesktopDuplicate__MainAssets",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="521921a3-a168-45db-a585-e3304a6c32f5" name="Changes" comment="" />
+      <created>1750444784147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750444784147</updated>
+      <workItem from="1750444786934" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
