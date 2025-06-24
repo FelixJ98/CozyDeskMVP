@@ -6328,6 +6328,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1000012030065192, guid: 57d4a6e606848364c9880f2adec16d90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1322720703}
+    - targetCorrespondingSourceObject: {fileID: 1000012030065192, guid: 57d4a6e606848364c9880f2adec16d90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1322720705}
   m_SourcePrefab: {fileID: 100100000, guid: 57d4a6e606848364c9880f2adec16d90, type: 3}
 --- !u!1001 &746689835
 PrefabInstance:
@@ -9592,6 +9595,24 @@ MonoBehaviour:
   scaleSpeed: 1
   minScale: 0.3
   maxScale: 3
+  testScaleUp: 273
+  testScaleDown: 274
+--- !u!114 &1322720705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322720695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7603d417c1c742f428d06448ab4d91e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desktopDisplay: {fileID: 740607077}
+  scaleSpeed: 1
+  minScale: 0.02
+  maxScale: 3.44
   testScaleUp: 273
   testScaleDown: 274
 --- !u!1 &1332240462
