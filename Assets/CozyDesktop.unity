@@ -2196,6 +2196,7 @@ GameObject:
   - component: {fileID: 223551253}
   - component: {fileID: 223551261}
   - component: {fileID: 223551260}
+  - component: {fileID: 223551262}
   m_Layer: 0
   m_Name: '[BuildingBlock] Cube'
   m_TagString: Untagged
@@ -2394,6 +2395,24 @@ MonoBehaviour:
   minScale: 0.3
   maxScale: 5
   maintainAspectRatio: 1
+--- !u!114 &223551262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223551252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4aef1ea67c69034eaf62b424db8d9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desktopDisplay: {fileID: 740607077}
+  scaleSpeed: 1
+  minScale: 0.3
+  maxScale: 3
+  testScaleUp: 273
+  testScaleDown: 274
 --- !u!1 &228346864
 GameObject:
   m_ObjectHideFlags: 0
