@@ -108,7 +108,6 @@ public class FocusZoneDetector : MonoBehaviour
     
     bool IsPlayer(Transform other) 
     {
-        // Check if this is the player
         return other == playerTransform || 
                other.CompareTag(playerTag) || 
                other.GetComponent<Camera>() != null;
@@ -118,7 +117,7 @@ public class FocusZoneDetector : MonoBehaviour
     {
         if (enableDebugLogs) 
         {
-            Debug.Log("Focus Ray"); // Your requested debug message
+            Debug.Log("Focus Ray"); 
         }
         
         OnPlayerEnterZone?.Invoke();

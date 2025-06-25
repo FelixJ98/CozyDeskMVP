@@ -29,10 +29,10 @@ public class FocusZoneCreator : MonoBehaviour
     
     void InitializeCreator() 
     {
-        // Find controller transform (you might need to adjust this path)
+        // Find controller transform 
         controllerTransform = FindControllerTransform();
         
-        // Create materials if not assigned
+        // materials 
         CreateDefaultMaterials();
         
         if (enableDebugLogs) 
@@ -45,7 +45,7 @@ public class FocusZoneCreator : MonoBehaviour
     
     Transform FindControllerTransform() 
     {
-        // Try to find controller transform - adjust this based on your VR setup
+        // Try to find controller transform
         GameObject rightHand = GameObject.Find("RightHandAnchor");
         if (rightHand == null) rightHand = GameObject.Find("Right Controller");
         if (rightHand == null) rightHand = GameObject.Find("RightHand");
@@ -55,7 +55,7 @@ public class FocusZoneCreator : MonoBehaviour
             return rightHand.transform;
         }
         
-        // Fallback to camera if controller not found
+        // Fallback to camera
         Camera mainCam = Camera.main;
         if (mainCam != null) 
         {

@@ -12558,11 +12558,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe374e980e1c3f4db0ba0ab54efd78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createZoneButton: 8192
-  controller: 2
-  previewMaterial: {fileID: 0}
-  finalMaterial: {fileID: 0}
-  previewColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  createZoneButton: 24576
+  controller: 98
+  previewMaterial: {fileID: 2100000, guid: 45bd9d38c71a27a42b629c0635d0865c, type: 2}
+  finalMaterial: {fileID: 2100000, guid: 7a2ac78a022f9434fb1eada88b0d6cd7, type: 2}
+  previewColor: {r: 1, g: 0.96062076, b: 0, a: 1}
   finalColor: {r: 0.81568635, g: 0.52156866, b: 0.27450982, a: 1}
   enableDebugLogs: 1
 --- !u!4 &1740877052
