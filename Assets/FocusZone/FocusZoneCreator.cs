@@ -2,9 +2,19 @@ using UnityEngine;
 
 public class FocusZoneCreator : MonoBehaviour 
 {
-    [Header("Input Settings")]
+    [Header("Input Settings - Controllers")]
     public OVRInput.Button createZoneButton = OVRInput.Button.PrimaryIndexTrigger;
     public OVRInput.Controller controller = OVRInput.Controller.RTouch;
+    
+    [Header("Input Settings - Hand Tracking")]
+    public bool enableHandTracking = true;
+    public OVRHand.HandFinger pinchFinger = OVRHand.HandFinger.Index;
+    public float pinchThreshold = 0.8f; // How much to pinch to activate
+    
+    [Header("Hand Tracking - Manual Assignment")]
+    public OVRHand rightHand; // Drag from Inspector
+    public OVRHand leftHand;  // Drag from Inspector
+    public bool useRightHand = true;
     
     [Header("Zone Settings")]
     public Material previewMaterial;
@@ -21,6 +31,11 @@ public class FocusZoneCreator : MonoBehaviour
     private GameObject previewCube;
     private GameObject finalZone;
     private Transform controllerTransform;
+    private bool isUsingHandTracking = false;
+    
+    // Hand tracking variables
+    private bool wasPinching = false;
+    private OVRHand currentHand;
     
     void Start() 
     {
@@ -29,30 +44,58 @@ public class FocusZoneCreator : MonoBehaviour
     
     void InitializeCreator() 
     {
-        // Find controller transform 
+        // Find controller transform
         controllerTransform = FindControllerTransform();
         
-        // materials 
+        // Setup hand tracking
+        SetupHandTracking();
+        
+        // Create materials if not assigned
         CreateDefaultMaterials();
         
         if (enableDebugLogs) 
         {
-            Debug.Log("✓ Focus Zone Creator initialized");
-            Debug.Log($"  Controller: {controller}");
-            Debug.Log($"  Button: {createZoneButton}");
+            Debug.Log("✓ Focus Zone Creator initialized (Controller + Hand Tracking)");
+            Debug.Log($"  Controller found: {(controllerTransform ? controllerTransform.name : "NULL")}");
+        }
+    }
+    
+    void SetupHandTracking() 
+    {
+        if (!enableHandTracking) return;
+        
+        currentHand = useRightHand ? rightHand : leftHand;
+        
+        if (currentHand == null) 
+        {
+            Debug.LogWarning("No hand assigned! Please drag OVRHand components to the Inspector.");
+        }
+        
+        if (enableDebugLogs) 
+        {
+            Debug.Log($"Hand Tracking Setup:");
+            Debug.Log($"  Right Hand: {(rightHand ? rightHand.name : "Not Assigned")}");
+            Debug.Log($"  Left Hand: {(leftHand ? leftHand.name : "Not Assigned")}");
+            Debug.Log($"  Current Hand: {(currentHand ? currentHand.name : "None")}");
         }
     }
     
     Transform FindControllerTransform() 
     {
-        // Try to find controller transform
-        GameObject rightHand = GameObject.Find("RightHandAnchor");
-        if (rightHand == null) rightHand = GameObject.Find("Right Controller");
-        if (rightHand == null) rightHand = GameObject.Find("RightHand");
+        // Try multiple common controller names
+        string[] controllerNames = {
+            "RightHandAnchor", "Right Controller", "RightHand",
+            "LeftHandAnchor", "Left Controller", "LeftHand",
+            "Controller (right)", "Controller (left)"
+        };
         
-        if (rightHand != null) 
+        foreach (string name in controllerNames) 
         {
-            return rightHand.transform;
+            GameObject controller = GameObject.Find(name);
+            if (controller != null) 
+            {
+                return controller.transform;
+            }
         }
         
         // Fallback to camera
@@ -107,39 +150,130 @@ public class FocusZoneCreator : MonoBehaviour
     
     void Update() 
     {
-        if (controllerTransform == null) return;
+        // Check which input method is active
+        DetermineActiveInputMethod();
         
-        HandleZoneCreation();
+        // Handle zone creation based on active input
+        if (isUsingHandTracking) 
+        {
+            HandleHandTrackingInput();
+        } 
+        else 
+        {
+            HandleControllerInput();
+        }
+        
+        // Update preview cube regardless of input method
         UpdatePreviewCube();
+        
+        // Debug controls
+        if (enableDebugLogs) 
+        {
+            if (Input.GetKeyDown(KeyCode.Space)) 
+            {
+                LogCurrentInputStatus();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.P) && isUsingHandTracking) 
+            {
+                LogPinchStrength();
+            }
+        }
     }
     
-    void HandleZoneCreation() 
+    void DetermineActiveInputMethod() 
     {
-        // Check for button press to start zone creation
+        // Check if hand tracking is available and active
+        bool handTrackingActive = enableHandTracking && 
+                                  currentHand != null && 
+                                  currentHand.IsTracked;
+        
+        // Check if controllers are connected
+        bool controllersActive = OVRInput.IsControllerConnected(controller);
+        
+        // Prioritize hand tracking when both are available
+        if (handTrackingActive) 
+        {
+            isUsingHandTracking = true;
+        } 
+        else if (controllersActive) 
+        {
+            isUsingHandTracking = false;
+        }
+    }
+    
+    void HandleControllerInput() 
+    {
+        if (controllerTransform == null) return;
+        
+        // Standard controller input
         if (OVRInput.GetDown(createZoneButton, controller) && !isCreatingZone) 
         {
             StartZoneCreation();
         }
         
-        // Check for button release to finish zone creation
         if (OVRInput.GetUp(createZoneButton, controller) && isCreatingZone) 
         {
             FinishZoneCreation();
         }
     }
     
+    void HandleHandTrackingInput() 
+    {
+        if (currentHand == null || !currentHand.IsTracked) return;
+        
+        // Check for pinch gesture
+        bool isPinching = IsPinchingGesture();
+        
+        // Start zone creation on pinch start
+        if (isPinching && !wasPinching && !isCreatingZone) 
+        {
+            StartZoneCreation();
+        }
+        
+        // Finish zone creation on pinch release
+        if (!isPinching && wasPinching && isCreatingZone) 
+        {
+            FinishZoneCreation();
+        }
+        
+        wasPinching = isPinching;
+    }
+    
+    bool IsPinchingGesture() 
+    {
+        if (currentHand == null || !currentHand.IsTracked) return false;
+        
+        float pinchStrength = currentHand.GetFingerPinchStrength(pinchFinger);
+        return pinchStrength >= pinchThreshold;
+    }
+    
     void StartZoneCreation() 
     {
         isCreatingZone = true;
-        startPosition = controllerTransform.position;
+        startPosition = GetActiveHandPosition();
         
-        // Create preview cube
         CreatePreviewCube();
         
         if (enableDebugLogs) 
         {
-            Debug.Log($"Started creating zone at: {startPosition}");
+            string inputMethod = isUsingHandTracking ? "Hand Tracking" : "Controller";
+            Debug.Log($"Started creating zone with {inputMethod} at: {startPosition}");
         }
+    }
+    
+    Vector3 GetActiveHandPosition() 
+    {
+        if (isUsingHandTracking && currentHand != null && currentHand.IsTracked) 
+        {
+            return currentHand.transform.position;
+        } 
+        else if (controllerTransform != null) 
+        {
+            return controllerTransform.position;
+        }
+        
+        return Vector3.zero;
     }
     
     void CreatePreviewCube() 
@@ -169,9 +303,9 @@ public class FocusZoneCreator : MonoBehaviour
     
     void UpdatePreviewCube() 
     {
-        if (!isCreatingZone || previewCube == null || controllerTransform == null) return;
+        if (!isCreatingZone || previewCube == null) return;
         
-        Vector3 currentPosition = controllerTransform.position;
+        Vector3 currentPosition = GetActiveHandPosition();
         
         // Calculate cube center and size
         Vector3 center = (startPosition + currentPosition) / 2f;
@@ -245,7 +379,62 @@ public class FocusZoneCreator : MonoBehaviour
         detector.enableDebugLogs = enableDebugLogs;
     }
     
-    // Public methods for external scripts
+    // Debug methods
+    void LogCurrentInputStatus() 
+    {
+        Debug.Log("=== INPUT STATUS ===");
+        Debug.Log($"Active Input Method: {(isUsingHandTracking ? "Hand Tracking" : "Controller")}");
+        Debug.Log($"Hand Tracking Enabled: {enableHandTracking}");
+        Debug.Log($"Current Hand Tracked: {(currentHand ? currentHand.IsTracked.ToString() : "No Hand Assigned")}");
+        Debug.Log($"Controller Connected: {OVRInput.IsControllerConnected(controller)}");
+        Debug.Log($"Creating Zone: {isCreatingZone}");
+    }
+    
+    void LogPinchStrength() 
+    {
+        if (currentHand != null && currentHand.IsTracked) 
+        {
+            float pinchStrength = currentHand.GetFingerPinchStrength(pinchFinger);
+            Debug.Log($"Pinch Strength: {pinchStrength:F2} (Threshold: {pinchThreshold})");
+            Debug.Log($"Is Pinching: {IsPinchingGesture()}");
+        }
+    }
+    
+    // Public methods for runtime control
+    public void SwitchToRightHand() 
+    {
+        useRightHand = true;
+        currentHand = rightHand;
+        controller = OVRInput.Controller.RTouch;
+        
+        if (enableDebugLogs) 
+        {
+            Debug.Log("Switched to right hand input");
+        }
+    }
+    
+    public void SwitchToLeftHand() 
+    {
+        useRightHand = false;
+        currentHand = leftHand;
+        controller = OVRInput.Controller.LTouch;
+        
+        if (enableDebugLogs) 
+        {
+            Debug.Log("Switched to left hand input");
+        }
+    }
+    
+    public void ToggleHandTracking(bool enable) 
+    {
+        enableHandTracking = enable;
+        
+        if (enableDebugLogs) 
+        {
+            Debug.Log($"Hand tracking {(enable ? "enabled" : "disabled")}");
+        }
+    }
+    
     public void ClearCurrentZone() 
     {
         if (finalZone != null) 
@@ -268,5 +457,10 @@ public class FocusZoneCreator : MonoBehaviour
     public GameObject GetActiveZone() 
     {
         return finalZone;
+    }
+    
+    public bool IsCurrentlyCreatingZone() 
+    {
+        return isCreatingZone;
     }
 }

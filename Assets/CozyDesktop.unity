@@ -1417,6 +1417,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5412617513283497626, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 5412617513283497626, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.008
+      objectReference: {fileID: 0}
     - target: {fileID: 5801245061754409418, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: _playerEyes
       value: 
@@ -12538,7 +12546,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740877052}
-  - component: {fileID: 1740877051}
+  - component: {fileID: 1740877053}
+  - component: {fileID: 1740877054}
   m_Layer: 0
   m_Name: FocusZoneCreator
   m_TagString: Untagged
@@ -12546,25 +12555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1740877051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740877050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe374e980e1c3f4db0ba0ab54efd78e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  createZoneButton: 24576
-  controller: 98
-  previewMaterial: {fileID: 2100000, guid: 2e72a11508d6a3a40be5d449efb9e12d, type: 2}
-  finalMaterial: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-  previewColor: {r: 1, g: 0.96062076, b: 0, a: 1}
-  finalColor: {r: 0.81568635, g: 0.52156866, b: 0.27450982, a: 1}
-  enableDebugLogs: 1
 --- !u!4 &1740877052
 Transform:
   m_ObjectHideFlags: 0
@@ -12580,6 +12570,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740877053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740877050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe374e980e1c3f4db0ba0ab54efd78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createZoneButton: 8192
+  controller: 2
+  enableHandTracking: 1
+  pinchFinger: 1
+  pinchThreshold: 0.8
+  rightHand: {fileID: 0}
+  leftHand: {fileID: 0}
+  useRightHand: 1
+  previewMaterial: {fileID: 2100000, guid: 2e72a11508d6a3a40be5d449efb9e12d, type: 2}
+  finalMaterial: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+  previewColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  finalColor: {r: 0, g: 1, b: 0, a: 1}
+  enableDebugLogs: 1
+--- !u!114 &1740877054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740877050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b62ede435d029a44832ba9da8a8afb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testHand: {fileID: 0}
 --- !u!1 &1755812043
 GameObject:
   m_ObjectHideFlags: 0
