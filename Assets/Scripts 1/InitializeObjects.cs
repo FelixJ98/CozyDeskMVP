@@ -87,7 +87,7 @@ public class InitializeObjects : MonoBehaviour
             locomotion motionInstance = FindObjectOfType<locomotion>();
             if (motionInstance != null)
             {
-                motionInstance.AddNode(houseInstance.transform);
+                motionInstance.AddNode(transform);
             }
             else
             {
@@ -115,7 +115,7 @@ public class InitializeObjects : MonoBehaviour
             locomotion motionInstance = FindObjectOfType<locomotion>();
             if (motionInstance != null)
             {
-                motionInstance.AddNode(houseInstance.transform);
+                motionInstance.AddNode(transform);
             }
             else
             {
