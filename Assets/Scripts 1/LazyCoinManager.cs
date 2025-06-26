@@ -1,10 +1,12 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class LazyCoinManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
+        [SerializeField] TextMeshProUGUI money;
         private int npcCount = 0;
         private int houseCount = 0;
         private int coinValue = 0;
@@ -20,12 +22,7 @@ public class LazyCoinManager : MonoBehaviour
         void Start()
         {
             // Optionally initialize
-            UpdateCoins();
-            RegisterNPC();
-            RegisterHouse();
-            RegisterLibrary();
-            RegisterBowling();
-            RegisterTheater();
+ 
         }
 
         public void Update()
@@ -66,7 +63,8 @@ public class LazyCoinManager : MonoBehaviour
 
         private void UpdateCoins()
         {
-            coinValue = (npcCount * 1) + (houseCount * 2) + (theaterCount * 5) + (bowlingCount * 8) + (libraryCount * 13); 
+            coinValue += (npcCount * 1) + (houseCount * 2) + (theaterCount * 5) + (bowlingCount * 8) + (libraryCount * 13); 
+            money.text = $"Bank: {coinValue}";
             Debug.Log("Coins: " + coinValue);
         }
 

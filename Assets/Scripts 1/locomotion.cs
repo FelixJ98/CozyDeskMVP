@@ -42,7 +42,15 @@ public class locomotion : MonoBehaviour
         {
             waypoints.Add(node.transform);
         }
-        StartCoroutine(Routine());
+
+        if (waypoints.Count > 0)
+        {
+            StartCoroutine(Routine());
+        }
+        else
+        {
+            Debug.LogWarning("No house nodes found! Waypoints list is empty.");
+        }
     }
     
     public void AssignHouse(Transform house)
