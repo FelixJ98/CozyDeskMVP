@@ -1,3 +1,4 @@
+using System;
 using TreeEditor;
 using UnityEngine;
 public class InitializeObjects : MonoBehaviour
@@ -25,55 +26,67 @@ public class InitializeObjects : MonoBehaviour
     
     public void InitializeHouse()
     {
-        if (housePrefab == null)
+        if (lcm.coinValue > 10)
         {
-            Debug.LogError("❌ housePrefab is not assigned!");
-            return;
-        }
-        if (lcm == null)
-        {
-            Debug.LogError("❌ LazyCoinManager not found!");
-            return;
-        }
+            lcm.coinValue -= 10;
+            if (housePrefab == null)
+            {
+                Debug.LogError("❌ housePrefab is not assigned!");
+                return;
+            }
 
-        var houseInstance = Instantiate(housePrefab, GetSpawnPosition(), Quaternion.identity);
-        lcm.RegisterHouse();
+            if (lcm == null)
+            {
+                Debug.LogError("❌ LazyCoinManager not found!");
+                return;
+            }
 
-        // Find locomotion at this point
-        locomotion motionInstance = FindObjectOfType<locomotion>();
-        if (motionInstance != null)
-        {
-            motionInstance.AddNode(houseInstance.transform);
-        }
-        else
-        {
-            Debug.LogWarning("⚠ No locomotion instance found at runtime when trying to add node!");
+            var houseInstance = Instantiate(housePrefab, GetSpawnPosition(), Quaternion.identity);
+            lcm.RegisterHouse();
+
+            // Find locomotion at this point
+            locomotion motionInstance = FindObjectOfType<locomotion>();
+            if (motionInstance != null)
+            {
+                motionInstance.AddNode(houseInstance.transform);
+            }
+            else
+            {
+                Debug.LogWarning("⚠ No locomotion instance found at runtime when trying to add node!");
+            }
         }
     }
 
-    
+
     public void InitializeLibrary()
     {
-        if (libraryPrefab == null)
+        if (lcm.coinValue > 100)
         {
-            Debug.LogError("libraryPrefab is not assigned!");
-            return;
-        }
-        if (lcm == null)
-        {
-            Debug.LogError("LazyCoinManager not found!");
-            return;
-        }
-        if (motion == null)
-        {
-            Debug.LogError("locomotion not found on this object!");
-            return;
-        }
+            lcm.coinValue -= 100;
+            if (libraryPrefab == null)
+            {
+                Debug.LogError("libraryPrefab is not assigned!");
+                return;
+            }
 
-        var libraryInstance = Instantiate(libraryPrefab, GetSpawnPosition(), Quaternion.identity);
-        lcm.RegisterLibrary();
-        motion.AddNode(libraryInstance.transform);  // Use the instance, not your InitializeObjects' transform
+            if (lcm == null)
+            {
+                Debug.LogError("LazyCoinManager not found!");
+                return;
+            }
+
+            if (motion == null)
+            {
+                Debug.LogError("locomotion not found on this object!");
+                return;
+            }
+
+            var libraryInstance = Instantiate(libraryPrefab, GetSpawnPosition(), Quaternion.identity);
+            lcm.RegisterLibrary();
+            motion.AddNode(libraryInstance.transform); // Use the instance, not your InitializeObjects' transform
+        }
     }
+
     /*
     public void InitializeTheater()
     {
@@ -84,9 +97,14 @@ public class InitializeObjects : MonoBehaviour
     */
     public void InitializeBowling()
     {
-        var bowlingInstance = Instantiate(bowlingPrefab, GetSpawnPosition(), Quaternion.identity);
-        lcm.RegisterBowling();
-        motion.AddNode(transform);
+        if (lcm.coinValue > 1000)
+        {
+            lcm.coinValue -= 1000;
+            var bowlingInstance = Instantiate(bowlingPrefab, GetSpawnPosition(), Quaternion.identity);
+            lcm.RegisterBowling();
+            motion.AddNode(transform);
+        }
+       
     }
     
     private Vector3 GetSpawnPosition()
