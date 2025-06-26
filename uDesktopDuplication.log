@@ -1,22 +1,22 @@
-[uDD::Log][2025-06-26 02:08:44] Start
-[uDD::Log][2025-06-26 02:08:44] OS Version    : 10.0
-[uDD::Log][2025-06-26 02:08:44] Build Number  : 19045
-[uDD::Log][2025-06-26 02:08:44] Service Pack  : 
-[uDD::Log][2025-06-26 02:08:44] Graphics Card [0] : NVIDIA GeForce RTX 3060 Ti
-[uDD::Log][2025-06-26 02:08:44]   > Monitor[0] : \\.\DISPLAY1
-[uDD::Log][2025-06-26 02:08:44]   > Monitor[1] : \\.\DISPLAY2
-[uDD::Log][2025-06-26 02:08:44] Graphics Card [1] : NVIDIA GeForce RTX 3060 Ti
-[uDD::Log][2025-06-26 02:08:44] Graphics Card [2] : Microsoft Basic Render Driver
-[uDD::Log][2025-06-26 02:08:44] Monitor::Initialized() =>
-[uDD::Log][2025-06-26 02:08:44]     ID    : 0
-[uDD::Log][2025-06-26 02:08:44]     Size  : (1920, 1080)
-[uDD::Log][2025-06-26 02:08:44]     DPI   : (81, 81)
-[uDD::Log][2025-06-26 02:08:44]     Rot   : Landscape
-[uDD::Log][2025-06-26 02:08:44] Duplicator::Initialize() => OK.
-[uDD::Log][2025-06-26 02:08:44] Monitor::Initialized() =>
-[uDD::Log][2025-06-26 02:08:44]     ID    : 1
-[uDD::Log][2025-06-26 02:08:44]     Size  : (1920, 1080)
-[uDD::Log][2025-06-26 02:08:44]     DPI   : (141, 140)
-[uDD::Log][2025-06-26 02:08:44]     Rot   : Landscape
-[uDD::Log][2025-06-26 02:08:44] Duplicator::Initialize() => OK.
-[uDD::Log][2025-06-26 02:11:14] Stop
+[uDD::Log][2025-06-26 03:29:53] Start
+[uDD::Log][2025-06-26 03:29:53] OS Version    : 10.0
+[uDD::Log][2025-06-26 03:29:53] Build Number  : 19045
+[uDD::Log][2025-06-26 03:29:53] Service Pack  : 
+[uDD::Log][2025-06-26 03:29:53] Graphics Card [0] : NVIDIA GeForce RTX 3060 Ti
+[uDD::Log][2025-06-26 03:29:53]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2025-06-26 03:29:53]   > Monitor[1] : \\.\DISPLAY2
+[uDD::Log][2025-06-26 03:29:53] Graphics Card [1] : NVIDIA GeForce RTX 3060 Ti
+[uDD::Log][2025-06-26 03:29:53] Graphics Card [2] : Microsoft Basic Render Driver
+[uDD::Log][2025-06-26 03:29:53] Monitor::Initialized() =>
+[uDD::Log][2025-06-26 03:29:53]     ID    : 0
+[uDD::Log][2025-06-26 03:29:53]     Size  : (1920, 1080)
+[uDD::Log][2025-06-26 03:29:53]     DPI   : (81, 81)
+[uDD::Log][2025-06-26 03:29:53]     Rot   : Landscape
+[uDD::Log][2025-06-26 03:29:53] Duplicator::Initialize() => OK.
+[uDD::Log][2025-06-26 03:29:53] Monitor::Initialized() =>
+[uDD::Log][2025-06-26 03:29:53]     ID    : 1
+[uDD::Log][2025-06-26 03:29:53]     Size  : (1920, 1080)
+[uDD::Log][2025-06-26 03:29:53]     DPI   : (141, 140)
+[uDD::Log][2025-06-26 03:29:53]     Rot   : Landscape
+[uDD::Log][2025-06-26 03:29:53] Duplicator::Initialize() => OK.
+[uDD::Log][2025-06-26 03:30:45] Stop
