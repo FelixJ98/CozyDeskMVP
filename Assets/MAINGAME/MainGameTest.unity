@@ -14435,7 +14435,7 @@ GameObject:
   - component: {fileID: 1938342937}
   - component: {fileID: 1938342936}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14454,9 +14454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 166672914}
-  libraryPrefab: {fileID: 887807577448716930, guid: 2ff60f01f783aee4d98fbc320fd5ea10, type: 3}
+  libraryPrefab: {fileID: 7803330195080375854, guid: ae1c6a7845731784c84ad040449d26e0, type: 3}
   housePrefab: {fileID: 887807577448716930, guid: 2ff60f01f783aee4d98fbc320fd5ea10, type: 3}
-  bowlingPrefab: {fileID: 887807577448716930, guid: 2ff60f01f783aee4d98fbc320fd5ea10, type: 3}
+  bowlingPrefab: {fileID: 4174822965169798365, guid: 95544ad7a32007a49bfb4e292cb051ad, type: 3}
   villagerPrefab: {fileID: 775127768176213950, guid: d157dae48e7333a449ab6868096b42b5, type: 3}
 --- !u!114 &1938342937
 MonoBehaviour:
