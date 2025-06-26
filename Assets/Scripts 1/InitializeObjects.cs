@@ -83,7 +83,16 @@ public class InitializeObjects : MonoBehaviour
 
             var libraryInstance = Instantiate(libraryPrefab, GetSpawnPosition(), Quaternion.identity);
             lcm.RegisterLibrary();
-            motion.AddNode(libraryInstance.transform); // Use the instance, not your InitializeObjects' transform
+            // Find locomotion at this point
+            locomotion motionInstance = FindObjectOfType<locomotion>();
+            if (motionInstance != null)
+            {
+                motionInstance.AddNode(houseInstance.transform);
+            }
+            else
+            {
+                Debug.LogWarning("⚠ No locomotion instance found at runtime when trying to add node!");
+            }
         }
     }
 
@@ -102,7 +111,16 @@ public class InitializeObjects : MonoBehaviour
             lcm.coinValue -= 0;
             var bowlingInstance = Instantiate(bowlingPrefab, GetSpawnPosition(), Quaternion.identity);
             lcm.RegisterBowling();
-            motion.AddNode(transform);
+            // Find locomotion at this point
+            locomotion motionInstance = FindObjectOfType<locomotion>();
+            if (motionInstance != null)
+            {
+                motionInstance.AddNode(houseInstance.transform);
+            }
+            else
+            {
+                Debug.LogWarning("⚠ No locomotion instance found at runtime when trying to add node!");
+            }
         }
        
     }
