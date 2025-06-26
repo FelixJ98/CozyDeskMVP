@@ -12,7 +12,7 @@ public class LazyCoinManager : MonoBehaviour
         private int libraryCount = 0;
         private int bowlingCount = 0;
         private int theaterCount = 0;
-        public int coinValue = 0; // Public getter
+        public int coinValue = 100000; // Public getter
 
         private float coinUpdateTimer = 0f;
         private float updateInterval = 1f;
