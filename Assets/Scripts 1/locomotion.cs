@@ -13,9 +13,13 @@ public class locomotion : MonoBehaviour
     private System.Random movementRNG;
     private int currentWaypointIndex = 0;
     private bool isChatting = false;
-
+    private Timer currentTime;
     public Transform assignedHouse;
-    private bool hasHouse = false;
+    public bool hasHouse = false;
+    private Animator animator;
+    private Transform currentChatTarget;
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     
@@ -28,6 +32,7 @@ public class locomotion : MonoBehaviour
     void Awake()
     {
         movementRNG = new System.Random(GetInstanceID());
+        animator = GetComponent<Animator>();
     }
     void Start()
     {
@@ -63,22 +68,32 @@ public class locomotion : MonoBehaviour
         currentWaypointIndex = waypoints.IndexOf(assignedHouse);
         if (currentWaypointIndex != -1)
         {
-            
+            Debug.Log($"{gameObject.name} is going home to {assignedHouse.name}.");
         }
         else
         {
             Debug.LogWarning($"Assigned house node {assignedHouse.name} not found in waypoints.");
         }
     }
-    IEnumerator Routine()
+    
+    public IEnumerator Routine()
     {
         while (true)
         {
             if (!isChatting && speed > 0f)
             {
+                // Check if currentWaypointIndex is valid
+                if (currentWaypointIndex < 0 || currentWaypointIndex >= waypoints.Count)
+                {
+                    Debug.LogWarning($"Invalid currentWaypointIndex {currentWaypointIndex}, resetting to 0");
+                    currentWaypointIndex = 0;
+                }
+
                 Transform target = waypoints[currentWaypointIndex];
+
                 while (Vector3.Distance(transform.position, target.position) > 0.1f && !isChatting)
                 {
+                    FaceTarget(target.position);
                     transform.position =
                         Vector3.MoveTowards(transform.position, target.position, speed);
                     yield return null;
@@ -87,18 +102,28 @@ public class locomotion : MonoBehaviour
                 if (!isChatting)
                 {
                     yield return new WaitForSeconds(1f);
-                    
+                
                     int newIndex;
                     do
                     {
                         newIndex = movementRNG.Next(0, waypoints.Count);
-                    } while (newIndex == currentWaypointIndex);
-
+                    } while (newIndex == currentWaypointIndex || 
+                             (hasHouse && waypoints[newIndex] == assignedHouse)
+                            );
                     currentWaypointIndex = newIndex;
                 }
-
             }
             yield return null;
+        }
+    }
+
+    void FaceTarget(Vector3 targetPosition)
+    {
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        if (direction != Vector3.zero)
+        {
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
         }
     }
 
@@ -108,19 +133,37 @@ public class locomotion : MonoBehaviour
         { 
             if (sharedRNG.NextDouble() < 0.9f)
             {
+                currentChatTarget = other.transform;
                 StartCoroutine(ChatRoutine());
             }
         }
     }
-
     IEnumerator ChatRoutine()
     {
         isChatting = true;
-        
-        Debug.Log($"{gameObject.name} chatting...");
+        if (animator != null)
+        {
+            animator.Play("Talking");
 
-        yield return new WaitForSeconds(5f);
+        }
+        Debug.Log($"{gameObject.name} chatting...");
+        
+        float chatDuration = 5f;
+        float elapsed = 0f;
+
+        while (elapsed < chatDuration)
+        {
+            if (currentChatTarget != null)
+            {
+                FaceTarget(currentChatTarget.position);
+            }
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        
         Debug.Log($"Stopping for 3 seconds...");
+        currentChatTarget = null;
         isChatting = false;
     }
 
