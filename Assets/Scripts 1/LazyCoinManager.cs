@@ -10,7 +10,7 @@ public class LazyCoinManager : MonoBehaviour
         private int coinValue = 0;
         private int libraryCount = 0;
         private int bowlingCount = 0;
-        private int theatherCount = 0;
+        private int theaterCount = 0;
         public int CoinValue => coinValue; // Public getter
 
         private float coinUpdateTimer = 0f;
@@ -50,7 +50,7 @@ public class LazyCoinManager : MonoBehaviour
 
         public void RegisterTheater()
         {
-            theatherCount++;
+            theaterCount++;
         }
 
         public void RegisterBowling()
@@ -66,7 +66,7 @@ public class LazyCoinManager : MonoBehaviour
 
         private void UpdateCoins()
         {
-            coinValue += (npcCount * 1) + (houseCount * 2) + (theatherCount * 5) + (bowlingCount * 8) + (libraryCount * 13); 
+            coinValue = (npcCount * 1) + (houseCount * 2) + (theaterCount * 5) + (bowlingCount * 8) + (libraryCount * 13); 
             Debug.Log("Coins: " + coinValue);
         }
 
