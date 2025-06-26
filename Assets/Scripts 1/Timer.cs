@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playTimeText;
     [SerializeField] private TextMeshProUGUI focusTimeText;
     [SerializeField] private TextMeshProUGUI timerText;
+    private locomotion motion;
 
     // Timer values in minutes
     private float playTimeMinutes = 0;
@@ -79,7 +80,12 @@ public class Timer : MonoBehaviour
     {
         ItsPlaytime = !ItsPlaytime;
         Debug.Log(ItsPlaytime ? "Switched to PLAYTIME" : "Switched to FOCUS TIME");
+        if (ItsPlaytime)
+        {
+            motion.GoHome();
+        }
         StartTimer();
+        
     }
 
     private void UpdateTimerDisplay()
