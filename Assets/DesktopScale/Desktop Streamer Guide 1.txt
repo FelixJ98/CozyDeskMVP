@@ -1,0 +1,3 @@
+Desktop Streamer Guide
+
+Make sure to add all the scale scripts and make sure the ISDK_HandGrabInteraction is attached as a child in the hierarchy.
