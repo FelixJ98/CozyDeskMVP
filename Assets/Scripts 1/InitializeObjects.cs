@@ -26,9 +26,9 @@ public class InitializeObjects : MonoBehaviour
     
     public void InitializeHouse()
     {
-        if (lcm.coinValue > 10)
+        if (lcm.coinValue > 0)
         {
-            lcm.coinValue -= 10;
+            lcm.coinValue -= 0;
             if (housePrefab == null)
             {
                 Debug.LogError("❌ housePrefab is not assigned!");
@@ -60,9 +60,9 @@ public class InitializeObjects : MonoBehaviour
 
     public void InitializeLibrary()
     {
-        if (lcm.coinValue > 100)
+        if (lcm.coinValue > 0)
         {
-            lcm.coinValue -= 100;
+            lcm.coinValue -= 0;
             if (libraryPrefab == null)
             {
                 Debug.LogError("libraryPrefab is not assigned!");
@@ -97,9 +97,9 @@ public class InitializeObjects : MonoBehaviour
     */
     public void InitializeBowling()
     {
-        if (lcm.coinValue > 1000)
+        if (lcm.coinValue > 0)
         {
-            lcm.coinValue -= 1000;
+            lcm.coinValue -= 0;
             var bowlingInstance = Instantiate(bowlingPrefab, GetSpawnPosition(), Quaternion.identity);
             lcm.RegisterBowling();
             motion.AddNode(transform);

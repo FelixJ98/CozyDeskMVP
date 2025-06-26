@@ -1,22 +1,15 @@
-[uDD::Log][2025-06-26 05:45:04] Start
-[uDD::Log][2025-06-26 05:45:04] OS Version    : 10.0
-[uDD::Log][2025-06-26 05:45:04] Build Number  : 19045
-[uDD::Log][2025-06-26 05:45:04] Service Pack  : 
-[uDD::Log][2025-06-26 05:45:04] Graphics Card [0] : NVIDIA GeForce RTX 3060 Ti
-[uDD::Log][2025-06-26 05:45:04]   > Monitor[0] : \\.\DISPLAY1
-[uDD::Log][2025-06-26 05:45:04]   > Monitor[1] : \\.\DISPLAY2
-[uDD::Log][2025-06-26 05:45:04] Graphics Card [1] : NVIDIA GeForce RTX 3060 Ti
-[uDD::Log][2025-06-26 05:45:04] Graphics Card [2] : Microsoft Basic Render Driver
-[uDD::Log][2025-06-26 05:45:04] Monitor::Initialized() =>
-[uDD::Log][2025-06-26 05:45:04]     ID    : 0
-[uDD::Log][2025-06-26 05:45:04]     Size  : (1920, 1080)
-[uDD::Log][2025-06-26 05:45:04]     DPI   : (81, 81)
-[uDD::Log][2025-06-26 05:45:04]     Rot   : Landscape
-[uDD::Log][2025-06-26 05:45:05] Duplicator::Initialize() => OK.
-[uDD::Log][2025-06-26 05:45:05] Monitor::Initialized() =>
-[uDD::Log][2025-06-26 05:45:05]     ID    : 1
-[uDD::Log][2025-06-26 05:45:05]     Size  : (1920, 1080)
-[uDD::Log][2025-06-26 05:45:05]     DPI   : (141, 140)
-[uDD::Log][2025-06-26 05:45:05]     Rot   : Landscape
-[uDD::Log][2025-06-26 05:45:05] Duplicator::Initialize() => OK.
-[uDD::Log][2025-06-26 05:46:46] Stop
+[uDD::Log][2025-06-26 06:16:31] Start
+[uDD::Log][2025-06-26 06:16:31] OS Version    : 10.0
+[uDD::Log][2025-06-26 06:16:31] Build Number  : 26100
+[uDD::Log][2025-06-26 06:16:31] Service Pack  : 
+[uDD::Log][2025-06-26 06:16:31] Graphics Card [0] : NVIDIA GeForce RTX 3070
+[uDD::Log][2025-06-26 06:16:31]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2025-06-26 06:16:31] Graphics Card [1] : NVIDIA GeForce RTX 3070
+[uDD::Log][2025-06-26 06:16:31] Graphics Card [2] : Microsoft Basic Render Driver
+[uDD::Log][2025-06-26 06:16:31] Monitor::Initialized() =>
+[uDD::Log][2025-06-26 06:16:31]     ID    : 0
+[uDD::Log][2025-06-26 06:16:31]     Size  : (1920, 1080)
+[uDD::Log][2025-06-26 06:16:31]     DPI   : (91, 91)
+[uDD::Log][2025-06-26 06:16:31]     Rot   : Landscape
+[uDD::Log][2025-06-26 06:16:31] Duplicator::Initialize() => OK.
+[uDD::Log][2025-06-26 06:17:31] Stop
