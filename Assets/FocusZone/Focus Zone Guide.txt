@@ -1,0 +1,9 @@
+Focus Zone Guide:
+
+FocusZoneRaycast prefab must have FocusZone.cs attached as a component. This identifies when a user looks at the desktop streamer and sends a debug log for it. This will be for coin generation.
+Assign "center eye camera" for player camera, as well as "Montior Plane" for Desktop screen. Adjust distance and angle to preference.
+
+
+
+FocusZoneCreator prefab must have HandTrackingFocusZoneCreator.cs and HandTrackingDebugger.cs for the focus zone to work. This is responsible for creating the focus zone with hand tracking. Make sure OVRHandPrefab is attached to both Left and right hand controller anchors, and turn on "right hand" in the OVR Hand Script in the inspector for the right hands OVRHandPrefab. Make sure to assign both OVRHands in the script component for FocusZoneCreator, (drag them from the heirarchy so you dont mix them up). And drag the right OVRHandPrefab into the Test Hand for HandTrackingDebugger component.
+

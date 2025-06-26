@@ -15,7 +15,7 @@ public class locomotion : MonoBehaviour
     private bool isChatting = false;
     private Timer currentTime;
     public Transform assignedHouse;
-    private bool hasHouse = false;
+    public bool hasHouse = false;
     private Animator animator;
     private Transform currentChatTarget;
     
@@ -68,20 +68,29 @@ public class locomotion : MonoBehaviour
         currentWaypointIndex = waypoints.IndexOf(assignedHouse);
         if (currentWaypointIndex != -1)
         {
-            
+            Debug.Log($"{gameObject.name} is going home to {assignedHouse.name}.");
         }
         else
         {
             Debug.LogWarning($"Assigned house node {assignedHouse.name} not found in waypoints.");
         }
     }
-    IEnumerator Routine()
+    
+    public IEnumerator Routine()
     {
         while (true)
         {
             if (!isChatting && speed > 0f)
             {
+                // Check if currentWaypointIndex is valid
+                if (currentWaypointIndex < 0 || currentWaypointIndex >= waypoints.Count)
+                {
+                    Debug.LogWarning($"Invalid currentWaypointIndex {currentWaypointIndex}, resetting to 0");
+                    currentWaypointIndex = 0;
+                }
+
                 Transform target = waypoints[currentWaypointIndex];
+
                 while (Vector3.Distance(transform.position, target.position) > 0.1f && !isChatting)
                 {
                     FaceTarget(target.position);
@@ -93,16 +102,16 @@ public class locomotion : MonoBehaviour
                 if (!isChatting)
                 {
                     yield return new WaitForSeconds(1f);
-                    
+                
                     int newIndex;
                     do
                     {
                         newIndex = movementRNG.Next(0, waypoints.Count);
-                    } while (newIndex == currentWaypointIndex);
-
+                    } while (newIndex == currentWaypointIndex || 
+                             (hasHouse && waypoints[newIndex] == assignedHouse)
+                            );
                     currentWaypointIndex = newIndex;
                 }
-
             }
             yield return null;
         }

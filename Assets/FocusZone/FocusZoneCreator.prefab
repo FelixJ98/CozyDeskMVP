@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2557006010033136683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8445183313738224626}
+  - component: {fileID: 8586769387132602033}
+  - component: {fileID: 4606044758933815937}
+  m_Layer: 0
+  m_Name: FocusZoneCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8445183313738224626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557006010033136683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6883825, y: -0.24049622, z: 1.3219712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8586769387132602033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557006010033136683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b62ede435d029a44832ba9da8a8afb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testHand: {fileID: 0}
+--- !u!114 &4606044758933815937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557006010033136683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254e77fdc7a3fdb4bb746ea24252f045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinchFinger: 1
+  pinchThreshold: 0.8
+  rightHand: {fileID: 0}
+  leftHand: {fileID: 0}
+  useRightHand: 1
+  previewMaterial: {fileID: 2100000, guid: 451711c761cf59c49b197140d83839a1, type: 2}
+  finalMaterial: {fileID: 2100000, guid: 70d72539a35e06547885df5c1c62bc3b, type: 2}
+  previewColor: {r: 1, g: 0.6805062, b: 0, a: 1}
+  finalColor: {r: 0, g: 1, b: 0, a: 1}
+  enableDebugLogs: 1
