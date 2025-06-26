@@ -1,6 +1,8 @@
 using System;
 using TreeEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 public class InitializeObjects : MonoBehaviour
 {
     private LazyCoinManager lcm;
@@ -11,6 +13,7 @@ public class InitializeObjects : MonoBehaviour
     [SerializeField] private GameObject housePrefab;
     [SerializeField] private GameObject bowlingPrefab;
     [SerializeField] private GameObject villagerPrefab;
+    [SerializeField] private GameObject villagerPrefab2;
     
     private void Start()
     {
@@ -20,7 +23,10 @@ public class InitializeObjects : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void InitializeVillager()
     {
-        var villagerInstance = Instantiate(villagerPrefab, GetSpawnPosition(), Quaternion.identity);
+        // Choose random prefab
+        GameObject prefabToSpawn = Random.Range(0, 2) == 0 ? villagerPrefab : villagerPrefab2;
+    
+        var villagerInstance = Instantiate(prefabToSpawn, GetSpawnPosition(), Quaternion.identity);
         lcm.RegisterNPC();
     }
     
@@ -57,7 +63,28 @@ public class InitializeObjects : MonoBehaviour
         }
     }
 
+    public void InitializeLibrary()
+    {
+        if (lcm.coinValue > 30)
+        {
+            lcm.coinValue -= 100;
+            var libraryInstance = Instantiate(libraryPrefab, GetSpawnPosition(), Quaternion.identity);
+            lcm.RegisterLibrary();
+            // Find locomotion at this point
+            locomotion motionInstance = FindObjectOfType<locomotion>();
+            if (motionInstance != null)
+            {
+                motionInstance.AddNode(transform);
+            }
+            else
+            {
+                Debug.LogWarning("⚠ No locomotion instance found at runtime when trying to add node!");
+            }
+        }
+   
+    }
 
+    /*
     public void InitializeLibrary()
     {
         if (lcm.coinValue > 0)
@@ -95,6 +122,7 @@ public class InitializeObjects : MonoBehaviour
             }
         }
     }
+    */
 
     /*
     public void InitializeTheater()

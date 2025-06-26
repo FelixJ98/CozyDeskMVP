@@ -3543,7 +3543,7 @@ MonoBehaviour:
   Colliders: 1
   CutHoles: 0
   castShadows: 1
-  hideMesh: 0
+  hideMesh: 1
   Layer: 0
   textureCoordinateModes:
   - WallU: 5
@@ -14458,6 +14458,7 @@ MonoBehaviour:
   housePrefab: {fileID: 887807577448716930, guid: 2ff60f01f783aee4d98fbc320fd5ea10, type: 3}
   bowlingPrefab: {fileID: 4174822965169798365, guid: 95544ad7a32007a49bfb4e292cb051ad, type: 3}
   villagerPrefab: {fileID: 775127768176213950, guid: d157dae48e7333a449ab6868096b42b5, type: 3}
+  villagerPrefab2: {fileID: 6046475714027413738, guid: 041d94da8d7e627419e94d521a9ffac3, type: 3}
 --- !u!114 &1938342937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14484,7 +14485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: {fileID: 539806845}
-  coinValue: 0
+  coinValue: 100
 --- !u!65 &1938342939
 BoxCollider:
   m_ObjectHideFlags: 0
