@@ -21,7 +21,6 @@ public class InitializeObjects : MonoBehaviour
     {
         var villagerInstance = Instantiate(villagerPrefab, GetSpawnPosition(), Quaternion.identity);
         lcm.RegisterNPC();
-        motion.AddNode(transform);
     }
     
     public void InitializeHouse()
