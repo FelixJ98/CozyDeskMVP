@@ -2661,7 +2661,7 @@ GameObject:
   - component: {fileID: 8487837986670573084}
   - component: {fileID: 9019415935720228560}
   m_Layer: 0
-  m_Name: hearthero (VRChat)
+  m_Name: cozyfellixprefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
