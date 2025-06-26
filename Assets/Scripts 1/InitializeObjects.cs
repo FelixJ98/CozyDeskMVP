@@ -28,7 +28,7 @@ public class InitializeObjects : MonoBehaviour
     {
         if (lcm.coinValue > 0)
         {
-            lcm.coinValue -= 0;
+            lcm.coinValue -= 10;
             if (housePrefab == null)
             {
                 Debug.LogError("❌ housePrefab is not assigned!");
@@ -62,7 +62,7 @@ public class InitializeObjects : MonoBehaviour
     {
         if (lcm.coinValue > 0)
         {
-            lcm.coinValue -= 0;
+            lcm.coinValue -= 100;
             if (libraryPrefab == null)
             {
                 Debug.LogError("libraryPrefab is not assigned!");
@@ -106,9 +106,9 @@ public class InitializeObjects : MonoBehaviour
     */
     public void InitializeBowling()
     {
-        if (lcm.coinValue > 0)
+        if (lcm.coinValue > 30)
         {
-            lcm.coinValue -= 0;
+            lcm.coinValue -= 1000;
             var bowlingInstance = Instantiate(bowlingPrefab, GetSpawnPosition(), Quaternion.identity);
             lcm.RegisterBowling();
             // Find locomotion at this point
